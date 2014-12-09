@@ -38,7 +38,7 @@ angular.module("assignmentApp", [])
 
         return{
             /**
-             * interface for this service has only function
+             * service interface
              * notice: if the input value is empty
              * this will set the view variables to 0 and empty
              * @param scope
