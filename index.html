@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html ng-app="assignmentApp">
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap.css.map"/>
+    <link rel="stylesheet" href="css/bootstrap-theme.css.map"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="application" src="js/angular.min.js.map"></script>
+    <script type="text/javascript" src="js/angular.min.js"></script>
+    <script type="text/javascript" src="js/assignment.js"></script>
+
+    <title>Software Factory</title>
+</head>
+<body ng-controller="appCtrl">
+
+<header class="container col-md-12 navbar navbar-default">
+    <div class="navbar-header">
+        <label class="navbar-brand ">
+            <a href="#">
+                Software Factory Assignment
+            </a>
+        </label>
+
+    </div>
+</header>
+<div class="container col-md-12">
+    <div class="col-md-3 col-md-offset-3">
+        <div class="panel panel-default ">
+            <div class="panel-heading">
+                <Strong>
+                    Enter a string
+                </Strong>
+            </div>
+            <div class="panel-body">
+                <div class="input-group ">
+                    <input class="form-control" type="text" placeholder=" Your string here " ng-keypress="updateOutput()" ng-model="string"/>
+                    <span class="input-group-addon">!</span>
+                </div>
+
+            </div>
+            <div class="panel-footer">
+
+                <div class="row ">
+                    <div class="col-md-3">
+                        <label class="label-success col-md-12 ">Length: </label>
+                    </div>
+                    <span class="col-md-9">  <strong>{{strLength}}</strong></span>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <label class="label-success col-md-12 ">Words: </label>
+                    </div>
+                    <span class="col-md-9"> <strong>{{words}}</strong></span>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <label class="label-success col-md-12 ">Reverse: </label>
+                    </div>
+                    <span class="col-md-9">{{reverse}}</span>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+<footer class="footer">
+    <div class="container">
+        <p class="text-muted">
+            <strong>
+                Created by Kavan Soleimanbeigi for Software Factory Assignment
+            </strong>
+        </p>
+    </div>
+</footer>>
+</body>
+</html>
